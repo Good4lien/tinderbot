@@ -1,0 +1,14 @@
+{
+  "name":"Tinder bot",
+  "description":"Tinder autolikes. Director: Roman",
+  "version":"1.8",
+  "manifest_version":2,
+  "content_scripts":[
+    {
+      "matches":["https://tinder.com/*"],
+      "js": ["tbot.js"],
+      "css": ["tbot-ui.css"],
+      "run_at":"document_idle"
+    }
+  ]
+}

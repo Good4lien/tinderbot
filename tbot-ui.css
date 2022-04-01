@@ -1,0 +1,65 @@
+@keyframes anime {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.tbot-ui {
+    animation: anime 1 3s ease-in;
+    position: absolute;
+    top:68%;
+    left:69%;
+    text-align: center;
+    width: 80px;
+}
+
+.tbot-button{
+    background-color: white;
+    background: radial-gradient( #FEFFFF, #f6f6f8);
+    width: 68px;
+    height: 68px;
+    border: solid 1px #eaeaea;
+    border-radius: 40px;
+    margin-top: -13px;
+    box-shadow: #eeeeee 0 0 4px 1px;
+    font-size: 50px;
+    line-height: 50px;
+    padding: 0;
+    color: #ffd042;
+    transform: rotate(45deg);
+}
+
+.tbot-button:active{
+    opacity: 0.9;
+    width: 60px;
+    height: 60px;
+    margin-top: -10px;
+    outline: none;
+    color: #ffe81f;
+    box-shadow: #e7e7e7 0 0 4px 1px;
+}
+
+.tbot-button:focus {
+    outline: none;
+}
+
+.tbot-button:hover {
+    outline: none;
+    position: relative;
+    transform: scale(1.1);
+}
+
+.tbot-header{
+    color: #a0a0a0;
+    font-family: "Open Sans";
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 200px){  .tbot-ui {position: absolute; top: 78%; left: 90%;}  }
+@media (min-width: 1200px){  .tbot-ui {position: absolute; top: 74%; left: 85%;}  }
+@media (min-width: 1500px){  .tbot-ui {position: absolute; top: 72%; left: 76%;}  }
+@media (min-width: 1910px){  .tbot-ui {position: absolute; top: 68%; left: 69%;}  }
